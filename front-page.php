@@ -15,8 +15,8 @@ get_header();
 				<h1 id="home-hero-title"><?php esc_html_e( 'Youth voices belong in the story.', 'kysports-foundation' ); ?></h1>
 				<p class="home-hero__intro"><?php esc_html_e( 'KySports empowers Kentucky youth through sports-media education, mentorship, and career-connected opportunities.', 'kysports-foundation' ); ?></p>
 			</div>
-			<div class="home-hero__media" role="img" aria-label="<?php esc_attr_e( 'Placeholder for future KySports student media production image or video.', 'kysports-foundation' ); ?>">
-				<p><?php esc_html_e( 'Future student production image or video', 'kysports-foundation' ); ?></p>
+			<div class="home-hero__media home-hero__media--video">
+				<iframe class="home-hero__video" src="https://www.youtube-nocookie.com/embed/NAY99w7x2ls?rel=0" title="<?php esc_attr_e( 'KySports video', 'kysports-foundation' ); ?>" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 			</div>
 		</div>
 	</section>
@@ -87,14 +87,16 @@ get_header();
 
 	<section class="home-spotlight" aria-labelledby="home-spotlight-title">
 		<div class="home-spotlight__inner">
-			<div class="home-spotlight__media" role="img" aria-label="<?php esc_attr_e( 'Placeholder for a future consented student spotlight photograph or video.', 'kysports-foundation' ); ?>">
-				<p><?php esc_html_e( 'Future student spotlight media', 'kysports-foundation' ); ?></p>
+			<div class="home-spotlight__media home-spotlight__media--photo">
+				<picture>
+					<source srcset="<?php echo esc_url( KYSPORTS_FOUNDATION_URI . '/assets/images/brenden-hunt-at-louisville-live-2024.webp' ); ?>" type="image/webp">
+					<img src="<?php echo esc_url( KYSPORTS_FOUNDATION_URI . '/assets/images/brenden-hunt-at-louisville-live-2024.png' ); ?>" alt="<?php esc_attr_e( 'Brenden Hunt filming at Louisville Live 2024.', 'kysports-foundation' ); ?>">
+				</picture>
 			</div>
 			<div class="home-spotlight__content">
 				<p class="section-eyebrow"><?php esc_html_e( 'Student spotlight', 'kysports-foundation' ); ?></p>
-				<h2 id="home-spotlight-title"><?php esc_html_e( 'A story waiting to be shared.', 'kysports-foundation' ); ?></h2>
-				<p><?php esc_html_e( 'This space is reserved for a future student story, shared with appropriate consent and in the student’s own words.', 'kysports-foundation' ); ?></p>
-				<p class="home-spotlight__note"><?php esc_html_e( 'Content placeholder', 'kysports-foundation' ); ?></p>
+				<h2 id="home-spotlight-title"><?php esc_html_e( 'Behind the camera, a new generation of storytellers.', 'kysports-foundation' ); ?></h2>
+				<p><?php esc_html_e( 'KySports gives young people room to bring energy, focus, and creativity to the work behind the scenes. Through hands-on media experiences, students build confidence, develop their voice, and help tell the stories of their communities.', 'kysports-foundation' ); ?></p>
 			</div>
 		</div>
 	</section>
@@ -192,6 +194,36 @@ get_header();
 				<div class="events-empty-state">
 					<p><?php esc_html_e( 'Upcoming events will appear here as they are added to the calendar.', 'kysports-foundation' ); ?></p>
 				</div>
+			<?php endif; ?>
+		</div>
+	</section>
+
+	<section class="home-partners" aria-labelledby="home-partners-title">
+		<div class="home-partners__inner">
+			<p class="section-eyebrow"><?php esc_html_e( 'Community partners', 'kysports-foundation' ); ?></p>
+			<h2 id="home-partners-title"><?php esc_html_e( 'Stronger stories take a community.', 'kysports-foundation' ); ?></h2>
+			<p class="home-partners__intro"><?php esc_html_e( 'KySports is grateful for the organizations and creative partners that strengthen this work.', 'kysports-foundation' ); ?></p>
+			<ul class="partner-list" aria-label="<?php esc_attr_e( 'Community partners', 'kysports-foundation' ); ?>">
+				<li><a class="partner-list__link" href="https://street.credit/"><img class="partner-list__logo" src="<?php echo esc_url( KYSPORTS_FOUNDATION_URI . '/assets/images/street-credit-sc-logo.png' ); ?>" alt="<?php esc_attr_e( 'Street Credit logo', 'kysports-foundation' ); ?>"></a></li>
+				<li><a class="partner-list__logo-frame" href="https://newlegacyky.org/"><img class="partner-list__logo" src="<?php echo esc_url( KYSPORTS_FOUNDATION_URI . '/assets/images/new-legacy-logo.png' ); ?>" alt="<?php esc_attr_e( 'New Legacy Reentry logo', 'kysports-foundation' ); ?>"></a></li>
+				<li><a class="partner-list__logo-frame" href="https://pjoy.co/"><img class="partner-list__logo" src="<?php echo esc_url( KYSPORTS_FOUNDATION_URI . '/assets/images/patrica-joy-photography-logo.png' ); ?>" alt="<?php esc_attr_e( 'Patrica Joy Photography logo', 'kysports-foundation' ); ?>"></a></li>
+				<li><a class="partner-list__logo-frame partner-list__logo-frame--dark" href="https://kysports.tv/"><img class="partner-list__logo" src="<?php echo esc_url( KYSPORTS_FOUNDATION_URI . '/assets/images/kysports-tv-logo.png' ); ?>" alt="<?php esc_attr_e( 'KySportsTV logo', 'kysports-foundation' ); ?>"></a></li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="home-donate" aria-labelledby="home-donate-title">
+		<div class="home-donate__inner">
+			<div>
+				<p class="section-eyebrow"><?php esc_html_e( 'Support KySports', 'kysports-foundation' ); ?></p>
+				<h2 id="home-donate-title"><?php esc_html_e( 'Help make room for the next generation of storytellers.', 'kysports-foundation' ); ?></h2>
+				<p><?php esc_html_e( 'Your support can help expand access to meaningful sports-media learning and mentorship.', 'kysports-foundation' ); ?></p>
+			</div>
+			<?php $kysports_donation_url = get_theme_mod( 'kysports_donation_url', KYSPORTS_FOUNDATION_DONATION_URL ); ?>
+			<?php if ( $kysports_donation_url ) : ?>
+				<a class="button button--gold" href="<?php echo esc_url( $kysports_donation_url ); ?>"><?php esc_html_e( 'Donate to KySports', 'kysports-foundation' ); ?></a>
+			<?php else : ?>
+				<p class="home-donate__placeholder"><?php esc_html_e( 'Donation link placeholder — set it in Appearance > Customize > KySports Donation.', 'kysports-foundation' ); ?></p>
 			<?php endif; ?>
 		</div>
 	</section>
