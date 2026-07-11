@@ -1,0 +1,41 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.5/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "color": {
+      "palette": [
+        { "slug": "kentucky-blue", "color": "#0057D9", "name": "Kentucky Blue" },
+        { "slug": "navy", "color": "#0A1B36", "name": "Navy" },
+        { "slug": "gold", "color": "#F5B301", "name": "Achievement Gold" },
+        { "slug": "surface", "color": "#F5F7FA", "name": "Light Gray" },
+        { "slug": "charcoal", "color": "#2D3748", "name": "Dark Text" },
+        { "slug": "white", "color": "#FFFFFF", "name": "White" }
+      ]
+    },
+    "layout": { "contentSize": "760px", "wideSize": "1200px" },
+    "spacing": { "spacingSizes": [
+      { "slug": "20", "size": "0.5rem", "name": "2XS" },
+      { "slug": "30", "size": "1rem", "name": "XS" },
+      { "slug": "40", "size": "1.5rem", "name": "S" },
+      { "slug": "50", "size": "2rem", "name": "M" },
+      { "slug": "60", "size": "3rem", "name": "L" },
+      { "slug": "70", "size": "4rem", "name": "XL" }
+    ] },
+    "typography": {
+      "fontFamilies": [
+        { "fontFamily": "Montserrat, Arial, sans-serif", "slug": "heading", "name": "Montserrat" },
+        { "fontFamily": "Inter, Arial, sans-serif", "slug": "body", "name": "Inter" }
+      ],
+      "fluid": true
+    }
+  },
+  "styles": {
+    "color": { "background": "var:preset|color|white", "text": "var:preset|color|charcoal" },
+    "typography": { "fontFamily": "var:preset|font-family|body", "lineHeight": "1.6" },
+    "elements": {
+      "heading": { "typography": { "fontFamily": "var:preset|font-family|heading", "fontWeight": "700", "lineHeight": "1.15" } },
+      "link": { "color": { "text": "var:preset|color|kentucky-blue" } }
+    }
+  }
+}
