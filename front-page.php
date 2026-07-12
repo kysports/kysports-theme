@@ -52,6 +52,35 @@ get_header();
 		</div>
 	</section>
 
+	<section class="home-reach" aria-labelledby="home-reach-title">
+		<div class="home-reach__inner">
+			<p class="section-eyebrow"><?php esc_html_e( 'Our reach', 'kysports-foundation' ); ?></p>
+			<h2 id="home-reach-title"><?php esc_html_e( 'Local stories, a growing audience.', 'kysports-foundation' ); ?></h2>
+			<p class="home-reach__intro"><?php esc_html_e( 'KySports connects communities through sports-media coverage across social and digital platforms.', 'kysports-foundation' ); ?></p>
+
+			<div class="home-reach__group">
+				<h3><?php esc_html_e( 'Subscribers and followers', 'kysports-foundation' ); ?></h3>
+				<ul class="reach-list">
+					<li><a href="https://www.youtube.com/@kysportstv"><span class="reach-list__platform"><?php esc_html_e( 'YouTube', 'kysports-foundation' ); ?></span><strong>7,800</strong><span><?php esc_html_e( 'subscribers', 'kysports-foundation' ); ?></span></a></li>
+					<li><a href="https://www.facebook.com/kysportstv"><span class="reach-list__platform"><?php esc_html_e( 'Facebook', 'kysports-foundation' ); ?></span><strong>27.9K</strong><span><?php esc_html_e( 'followers', 'kysports-foundation' ); ?></span></a></li>
+					<li><a href="https://twitter.com/kysportstv"><span class="reach-list__platform"><?php esc_html_e( 'Twitter', 'kysports-foundation' ); ?></span><strong>9,200</strong><span><?php esc_html_e( 'followers', 'kysports-foundation' ); ?></span></a></li>
+					<li><a href="https://www.instagram.com/kysportstv"><span class="reach-list__platform"><?php esc_html_e( 'Instagram', 'kysports-foundation' ); ?></span><strong>6,300</strong><span><?php esc_html_e( 'followers', 'kysports-foundation' ); ?></span></a></li>
+				</ul>
+			</div>
+
+			<div class="home-reach__group">
+				<h3><?php esc_html_e( 'Monthly reach', 'kysports-foundation' ); ?></h3>
+				<ul class="reach-list">
+					<li><a href="https://www.youtube.com/@kysportstv"><span class="reach-list__platform"><?php esc_html_e( 'YouTube', 'kysports-foundation' ); ?></span><strong>112K</strong><span><?php esc_html_e( 'views', 'kysports-foundation' ); ?></span></a></li>
+					<li><a href="https://www.facebook.com/kysportstv"><span class="reach-list__platform"><?php esc_html_e( 'Facebook', 'kysports-foundation' ); ?></span><strong>3.5M</strong><span><?php esc_html_e( 'views', 'kysports-foundation' ); ?></span></a></li>
+					<li><a href="https://twitter.com/kysportstv"><span class="reach-list__platform"><?php esc_html_e( 'Twitter', 'kysports-foundation' ); ?></span><strong>12K</strong><span><?php esc_html_e( 'impressions', 'kysports-foundation' ); ?></span></a></li>
+					<li><a href="https://www.instagram.com/kysportstv"><span class="reach-list__platform"><?php esc_html_e( 'Instagram', 'kysports-foundation' ); ?></span><strong>20K</strong><span><?php esc_html_e( 'impressions', 'kysports-foundation' ); ?></span></a></li>
+					<li><span class="reach-list__platform"><?php esc_html_e( 'Website', 'kysports-foundation' ); ?></span><strong>52K</strong><span><?php esc_html_e( 'visits', 'kysports-foundation' ); ?></span></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
 	<section class="home-programs" aria-labelledby="home-programs-title">
 		<div class="home-programs__inner">
 			<div class="home-programs__intro">
